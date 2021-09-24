@@ -3,6 +3,10 @@ package ru.stqa.pft.sandbox;
 public class MyFirstProgram {
 
   public static void main(String[] args) {
-    System.out.println("Hello, world!");
+    hello("world");
+  }
+
+  private static void hello(String smb ) {
+    System.out.println("Hello," + smb + '!');
   }
 }
