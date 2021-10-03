@@ -29,7 +29,7 @@ public class TestBase {
     wd.findElement(By.xpath("//input[@value='Login']")).click();
   }
 
-  protected void returnGroupPage() {
+  protected void returnToGroupPage() {
     wd.findElement(By.linkText("group page")).click();
   }
 
@@ -99,5 +99,17 @@ public class TestBase {
     } catch (NoAlertPresentException e) {
       return false;
     }
+  }
+
+  protected void deleteSelectedGroups() {
+    wd.findElement(By.name("delete")).click();
+  }
+
+  protected void extractGroup() {
+    wd.findElement(By.name("selected[]")).click();
+  }
+
+  protected void gotoGroupPage() {
+    wd.findElement(By.linkText("groups")).click();
   }
 }
