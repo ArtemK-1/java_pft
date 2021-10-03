@@ -27,7 +27,6 @@ public class GroupCreationTests {
 
   @Test
   public void testGroupCreation() throws Exception {
-
     initGroupCreation();
     fillGroupForm(new GroupData("test1", "test2", "test3"));
     submitGroupForm();
