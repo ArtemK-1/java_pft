@@ -6,7 +6,6 @@ import ru.stqa.pft.addressbook.tests.model.ContactData;
 
 
 public class ContactHelper extends HelperBase {
-  //private FirefoxDriver wd;
 
   public ContactHelper(FirefoxDriver wd) {
     super(wd);
